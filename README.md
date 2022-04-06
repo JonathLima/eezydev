@@ -1,58 +1,110 @@
+﻿# <div align="center"><img  width="200" src="https://i.imgur.com/EuQ8A9x.png" /></div>
 
-![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
+#### <div align="center"> Website: </br> ⚠️ NOT READY ⚠️</div>
 
-This is a [Next.js](https://nextjs.org/) boilerplate to be used in a course called [React Avançado](https://reactavancado.com.br/).
-![ci](https://github.com/React-Avancado/boilerplate/workflows/ci/badge.svg)
-## What is inside?
+<p align="center">
 
-This project uses lot of stuff as:
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/JonathSilva/eezydev">
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
+<img alt="Repository size" src="https://img.shields.io/github/repo-size/JonathSilva/eezydev">
 
-## Getting Started
+<a href="https://www.linkedin.com/in/jonathsilva/">
+    <img alt="Made by Jonathan" src="https://img.shields.io/badge/made%20by-JonathSilva-blue">
+</a>
 
-First, run the development server:
+<a href="https://github.com/JonathSilva/makeQuestion/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/JonathSilva/eezydev?color=blue">
+</a>
+
+<img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?color=blue">
+
+</p>
+
+<p align="center">
+
+<a href="https://reactjs.org/">
+  <img alt="ReactJS" src="https://img.shields.io/static/v1?color=blue&label=React&message=JS&?style=plastic&logo=React">
+</a>
+
+</p>
+
+## 🎨 Layout
+
+<img src="https://i.imgur.com/xA5XEuT.png">
+
+## 🚀 About Project
+
+This is my most recent portfolio using cms to publish projects.
+
+## 🔨 Tech:
+
+- [Typescript][typescript]
+- [ReactJs][reactjs]
+- [Styled Components][components]
+- [Sanity CMS][sanity]
+- [Jest][jest]
+
+<!-- ## 📋 Implementations
+
+- [✔️] Structure website.
+- [✔️] Sign in to google account.
+- [✔️] User page to ask questions.
+- [✔️] Admin page for answering questions
+- [✔️] Deploying in firebase. -->
+
+## 🚀 How to run
+
+To clone and run this application, you will need [Git](https://git-scm.com), [NodeJs][nodejs] installed on your computer.
+
+### 🌀 Cloning repository
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone this repository
+$ git clone https://github.com/JonathSilva/eezydev.git
+
+# Go to the project folder in terminal/cmd
+$ cd eezydev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🧭 Run Application Web
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+# Install dependencies
+$ yarn
 
-## Commands
+# Run Application
+$ yarn start
 
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
+# server will start on port:3000 - Go to http://localhost:3000
+```
 
-## Learn More
+## 🤔 How contribute to project
 
-To learn more about Next.js, take a look at the following resources:
+- Make a **fork** of the project;
+- Create a new branch with your changes: `git checkout -b my-feature`
+- Save the changes and create a commit message telling what you have done:`git commit -m "feature: My new feature"`
+- Push your changes: `git push origin my-feature`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> If you have any questions check out this [guide on how to contribute on GitHub](https://github.com/firstcontributions/first-contributions)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📝 License
 
-## Deploy on Vercel
+This project is under MIT license. See [License][license] to learn more.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Made with ❤️ by Jonathan Silva 👋🏽 [Linkedin](https://www.linkedin.com/in/jonathsilva)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[nodejs]: https://nodejs.org/
+[express]: https://expressjs.com/
+[uuidv4]: https://www.npmjs.com/package/uuidv4
+[nodemon]: https://www.npmjs.com/package/nodemon
+[prismic]: https://prismic.io/
+[jest]: https://jestjs.io/
+[components]: https://styled-components.com/
+[sanity]: https://www.sanity.io/
+
+[scss]:[https://sass-lang.com/]
+[license]: https://opensource.org/licenses/MIT
+[postgres]: https://www.postgresql.org/
+[reactjs]: https://reactjs.org/
+[axios]: https://www.npmjs.com/package/axios
+[typescript]: https://www.typescriptlang.org/
