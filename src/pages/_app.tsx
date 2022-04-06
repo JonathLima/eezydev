@@ -1,24 +1,33 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-
-import GlobalStyles from 'styles/global'
+import { useState } from 'react'
+import { ThemeProvider } from 'styled-components'
+import { GlobalStyles } from 'styles/global'
+import dark from 'styles/themes/dark'
+import light from 'styles/themes/light'
+// Import Swiper styles
 
 function App({ Component, pageProps }: AppProps) {
+  const [theme, setTheme] = useState(light)
+
+  const toggleTheme = () => {
+    setTheme(theme.title === 'light' ? dark : light)
+  }
   return (
     <>
       <Head>
-        <title>React Avançado - Boilerplate</title>
+        <title>EEZY.DEV</title>
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#06092B" />
-        <meta
-          name="description"
-          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
-        />
+        <meta name="theme-color" content="#f0f0f5" />
+        <meta name="description" content="Portfolio" />
       </Head>
-      <GlobalStyles />
-      <Component {...pageProps} />
+
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Component {...pageProps} toggleTheme={toggleTheme} />
+      </ThemeProvider>
     </>
   )
 }

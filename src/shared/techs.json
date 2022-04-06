@@ -1,0 +1,16 @@
+{
+  "techs": [
+    { "id": 1, "name": "Javascript", "imageUrl": "/img/techs/javascript.png" },
+    { "id": 2, "name": "Typescript", "imageUrl": "/img/techs/typescript.png" },
+    { "id": 3, "name": "ReactJS", "imageUrl": "/img/techs/react.png" },
+    {
+      "id": 4,
+      "name": "React Native",
+      "imageUrl": "/img/techs/react-native.png"
+    },
+    { "id": 5, "name": "NodeJS", "imageUrl": "/img/techs/node.png" },
+    { "id": 6, "name": "Git", "imageUrl": "/img/techs/git.png" },
+    { "id": 7, "name": "Flutter", "imageUrl": "/img/techs/flutter.png" },
+    { "id": 8, "name": "C++", "imageUrl": "/img/techs/cpp.png" }
+  ]
+}
