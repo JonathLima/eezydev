@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
+import { Link } from 'react-scroll'
 import { ButtonTheme } from '../../components/ButtonTheme'
 import { BurgerMenu } from '../BurgerMenu'
 import * as S from './styles'
@@ -15,12 +16,12 @@ export const Header = ({ toggleTheme }: HeaderProps) => {
 
   const handleLabelClick = () => {
     const bodySelector = document.querySelector('body')
+    //const burguerSelector = document.getElementsByClassName('burger')
     if (!isCheck) {
       setIsCheck(true)
       bodySelector!.style.overflow = 'hidden'
     } else {
       bodySelector!.style.overflow = 'auto'
-
       setIsCheck(false)
     }
   }
@@ -38,15 +39,12 @@ export const Header = ({ toggleTheme }: HeaderProps) => {
           </S.Logo>
           <BurgerMenu onChange={handleLabelClick} />
           <S.PageList active={`${isCheck ? 'active' : ''}`}>
-            {['Home', 'Technologies', 'Projects'].map((pages) => (
-              <S.Url key={pages.length}>
+            {['Home', 'Technologies', 'Projects'].map((pages, index) => (
+              <S.Url key={index}>
                 <li className="pages">
-                  <a
-                    onClick={handleLabelClick}
-                    href={`#${pages.toLowerCase()}`}
-                  >
-                    {pages}
-                  </a>
+                  <Link to={pages.toLowerCase()}>
+                    <a onClick={handleLabelClick}>{pages}</a>
+                  </Link>
                 </li>
               </S.Url>
             ))}
@@ -61,10 +59,12 @@ export const Header = ({ toggleTheme }: HeaderProps) => {
             EEZY<span>.DEV</span>
           </S.Logo>
           <S.PageList>
-            {['Home', 'Technologies', 'Projects'].map((pages) => (
-              <S.Url key={pages.length}>
+            {['Home', 'Technologies', 'Projects'].map((pages, index) => (
+              <S.Url key={index}>
                 <li className="pages">
-                  <a href={`#${pages.toLowerCase()}`}>{pages}</a>
+                  <Link to={pages.toLowerCase()}>
+                    <a>{pages}</a>
+                  </Link>
                 </li>
               </S.Url>
             ))}

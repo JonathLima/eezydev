@@ -16,8 +16,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import jsonTechsData from './../shared/techs.json'
 import * as S from './../styles/pages'
 import userImg from '/public/img/avatar-user.png'
-const pdfResume =
-  'https://drive.google.com/file/d/1FnOqdDy8uXs_5r41fO609H6Jbgc7ZqJU/view?usp=sharing'
 
 type PostProps = {
   _id: string
@@ -87,9 +85,8 @@ const Home = ({ toggleTheme, projects }: HomeProps) => {
             </S.Socials>
             <S.Resume data-aos="fade-up">
               <a
-                href={pdfResume}
+                href={`${process.env.PDF_RESUME}`}
                 target="_blank"
-                download="Resume"
                 rel="noreferrer"
               >
                 {'Resume'}

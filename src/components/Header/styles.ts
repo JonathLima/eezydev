@@ -79,7 +79,7 @@ export const HeaderSettings = styled.div`
 
   @media (max-width: 960px) {
     position: relative;
-    top: 46rem;
+    top: 10rem;
     gap: 10rem;
   }
 

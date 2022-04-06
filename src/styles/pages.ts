@@ -12,7 +12,7 @@ export const Container = styled.section`
   justify-content: space-between;
   flex-direction: row;
   height: 80vh;
-  margin-top: 8rem;
+  margin-top: 5rem;
 
   .user-image {
     .image {
@@ -123,7 +123,7 @@ export const SocialContainer = styled.div`
 
 export const Socials = styled.div`
   display: flex;
-  margin-left: 4rem;
+  //margin-left: 4rem;
   justify-content: center;
 
   a {
@@ -189,8 +189,6 @@ export const Resume = styled.button`
 `
 
 export const TechContainer = styled.section`
-  margin-top: 5rem;
-
   h2 {
     color: ${(props) => props.theme.colors.headerText};
     font-size: 6rem;
@@ -259,7 +257,7 @@ export const Technologies = styled.div`
 export const ProjectContainer = styled.div`
   margin-bottom: 25rem;
   h2 {
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
     color: ${(props) => props.theme.colors.headerText};
     font-size: 6rem;
     font-weight: bold;
@@ -329,7 +327,7 @@ export const ProjectContainer = styled.div`
     }
   }
   @media (max-width: 600px) {
-    margin-top: 85rem;
+    margin-top: 90rem;
     h2 {
       font-size: 4rem;
       text-align: center;
