@@ -123,17 +123,15 @@ export const SocialContainer = styled.div`
 
 export const Socials = styled.div`
   display: flex;
-  //margin-left: 4rem;
-  justify-content: center;
+  width: 20rem;
+  justify-content: flex-end;
 
   a {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+    margin-left: 2.5rem;
   }
   svg {
-    margin-left: 3.2rem;
+    display: flex;
     width: 2rem;
     height: 2rem;
     color: ${(props) => props.theme.colors.headerText};
