@@ -123,6 +123,7 @@ export const SocialContainer = styled.div`
 
 export const Socials = styled.div`
   display: flex;
+  margin-bottom: 8rem;
   width: 20rem;
   justify-content: flex-end;
 

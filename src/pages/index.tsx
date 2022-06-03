@@ -2,6 +2,7 @@ import imageUrlBuilder from '@sanity/image-url'
 import { SanityImageSource } from '@sanity/image-url/lib/types/types'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { AboutMe } from 'components/AboutMe'
 import { Header } from 'components/Header'
 import { RocketButton } from 'components/RocketButton'
 import { GetStaticProps } from 'next'
@@ -57,7 +58,7 @@ const Home = ({ toggleTheme, projects }: HomeProps) => {
           <S.TextContainer data-aos="fade-left">
             <h1 className="typing">{'Hello World, my name is'}</h1>
             <p>{'Jonathan'}</p>
-            <span>{'Full Stack Developer'}</span>
+            <span>{'Mobile & Game Developer'}</span>
           </S.TextContainer>
           <S.SocialContainer>
             <S.Socials data-aos="fade-up">
@@ -83,7 +84,7 @@ const Home = ({ toggleTheme, projects }: HomeProps) => {
                 <SiGmail />
               </a>
             </S.Socials>
-            <S.Resume data-aos="fade-up">
+            {/* <S.Resume data-aos="fade-up">
               <a
                 href={`${process.env.PDF_RESUME}`}
                 target="_blank"
@@ -91,10 +92,10 @@ const Home = ({ toggleTheme, projects }: HomeProps) => {
               >
                 {'Resume'}
               </a>
-            </S.Resume>
+            </S.Resume> */}
           </S.SocialContainer>
         </S.Container>
-
+        <AboutMe />
         <S.TechContainer id="technologies">
           <h2 data-aos="fade-up">{'Technologies'}</h2>
 
