@@ -3,12 +3,10 @@ import { SiArtstation, SiTwitch } from 'react-icons/si'
 
 import * as S from './styles'
 
-//data-aos="fade-up"
-
 export const Socials = () => {
   return (
     <>
-      <S.SocialContainer>
+      <S.SocialContainer data-aos="fade-up">
         <S.Socials>
           <a
             href="https://github.com/JonathSilva"
