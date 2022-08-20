@@ -21,17 +21,21 @@ export const TextContainer = styled.div`
     font-weight: bold;
   }
 
-  span {
-    position: relative;
-    font-size: 1.8rem;
-    text-align: right;
-    top: 2.5rem;
-    color: ${(props) => props.theme.colors.text};
+  div {
+    display: flex;
+    justify-content: right;
+    margin-top: 3rem;
+    span {
+      position: relative;
+      font-size: 1.8rem;
+      text-align: right;
+      color: ${(props) => props.theme.colors.text};
+    }
   }
 
   @media (max-width: 960px) {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     justify-content: center;
     align-items: center;
 
@@ -46,11 +50,12 @@ export const TextContainer = styled.div`
       right: 1.5rem;
       top: -1.5rem;
     }
-    span {
-      position: relative;
-
-      right: 1.5rem;
-      top: -2.5rem;
+    div {
+      span {
+        position: relative;
+        right: 1.5rem;
+        top: -5rem;
+      }
     }
   }
 

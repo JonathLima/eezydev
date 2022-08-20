@@ -1,7 +1,7 @@
 {
   "techs": [
     { "id": 1, "name": "Kotlin", "imageUrl": "/img/techs/kotlin.png" },
-    { "id": 2, "name": "Java", "imageUrl": "/img/techs/java.png" },
+    { "id": 2, "name": "C Sharp", "imageUrl": "/img/techs/csharp.png" },
     { "id": 3, "name": "Flutter", "imageUrl": "/img/techs/flutter.png" },
     {
       "id": 4,
