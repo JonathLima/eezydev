@@ -1,6 +1,6 @@
 ﻿# <div align="center"><img  width="200" src="https://i.imgur.com/EuQ8A9x.png" /></div>
 
-#### <div align="center"> Website: </br> ⚠️ NOT READY ⚠️</div>
+#### <div align="center"> Website: </br> https://eezydev.vercel.app/ </div>
 
 <p align="center">
 
