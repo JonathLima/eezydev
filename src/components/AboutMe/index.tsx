@@ -6,10 +6,10 @@ export const AboutMe = () => {
       <h2 data-aos="fade-up">{'About Me'}</h2>
 
       <p data-aos="fade-left">
-        Developer with focus on Back-end and Mobile, passionate about cinema,
-        photography and video games, my professional goal is to work with games
-        in the future, I also draw conceptual arts using digital painting and 3D
-        modeling, but I take it as a hobby.
+        Back-end and mobile developer with a passion for film, photography and games, 
+        my professional goal is to create immersive and captivating experiences in the gaming world. 
+        I am diving head-first into 3D Animation and Game design to take my projects 
+        to a new level of creativity and innovation.
       </p>
     </S.AboutContainer>
   )
