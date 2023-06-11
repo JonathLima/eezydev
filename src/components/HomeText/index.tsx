@@ -7,7 +7,7 @@ export const HomeText = () => {
         <h1 className="typing">{'Hello World, my name is'}</h1>
         <p>{'Jonathan'}</p>
         <div>
-          <span>{'Software Engineer'}</span>
+          <span>{'Game Design | 3D Animation'}</span>
         </div>
       </S.TextContainer>
     </>
