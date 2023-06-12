@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-  display: flexbox;
+  display: flex;
   width: 100%;
   justify-content: space-between;
   flex-direction: row;
-  height: 80vh;
+  margin-bottom: 10rem;
+
   margin-top: 5rem;
 
   .user-image {
@@ -15,18 +16,15 @@ export const Container = styled.section`
   }
 
   @media (max-width: 960px) {
-    display: flex;
     flex-direction: column;
-    position: relative;
     justify-content: center;
+    padding: 2rem;
     align-items: center;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
 
     .user-image {
-      margin-top: 5rem;
       .image {
-        width: 5rem;
+        width: 420px;
+        height: 420px;
       }
     }
   }

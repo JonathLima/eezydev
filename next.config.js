@@ -1,15 +1,39 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const withPWA = require('next-pwa')
-const isProd = process.env.NODE_ENV === 'production'
+/** @type {import('next').NextConfig} */
+const runtimeCaching = require('next-pwa/cache')
 
-module.exports = withPWA({
-  swcMinify: false,
-  experimental: {
-    // Enables the styled-components SWC transform
-    styledComponents: true
-  },
+const withPWA = require('next-pwa')({
   pwa: {
     dest: 'public',
-    disable: !isProd
+    register: true,
+    skipWaitings: true,
+    runtimeCaching,
+    disabled: process.env.NODE_ENV === 'development',
+    sw: 'sw.js'
   }
 })
+
+module.exports = withPWA({
+  reactStrictMode: true
+})
+
+module.exports = {
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.sanity.io',
+        port: '',
+        pathname: '/**'
+      }
+    ]
+  },
+  i18n: {
+    locales: ['pt', 'en'],
+    defaultLocale: 'pt'
+  },
+  compiler: {
+    styledComponents: true
+  },
+  swcMinify: true
+}

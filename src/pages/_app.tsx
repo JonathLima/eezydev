@@ -26,6 +26,7 @@ function App({ Component, pageProps }: AppProps) {
 
       <ThemeProvider theme={theme}>
         <GlobalStyles />
+
         <Component {...pageProps} toggleTheme={toggleTheme} />
       </ThemeProvider>
     </>

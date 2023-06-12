@@ -4,7 +4,7 @@ export const FooterContaier = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10rem;
+  height: 8rem;
   width: 100%;
   background: ${(props) => props.theme.colors.slider};
 

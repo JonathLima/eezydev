@@ -16,13 +16,15 @@ export const Header = ({ toggleTheme }: HeaderProps) => {
 
   const handleLabelClick = () => {
     const bodySelector = document.querySelector('body')
-    //const burguerSelector = document.getElementsByClassName('burger')
-    if (!isCheck) {
-      setIsCheck(true)
-      bodySelector!.style.overflow = 'hidden'
-    } else {
-      bodySelector!.style.overflow = 'auto'
-      setIsCheck(false)
+
+    if (bodySelector) {
+      setIsCheck(!isCheck)
+
+      if (!isCheck) {
+        bodySelector.style.overflow = 'hidden'
+      } else {
+        bodySelector.style.overflow = 'auto'
+      }
     }
   }
 
@@ -42,8 +44,13 @@ export const Header = ({ toggleTheme }: HeaderProps) => {
             {['Home', 'Technologies', 'Projects'].map((pages, index) => (
               <S.Url key={index}>
                 <li className="pages">
-                  <Link to={pages.toLowerCase()}>
-                    <a onClick={handleLabelClick}>{pages}</a>
+                  <Link
+                    to={pages.toLowerCase()}
+                    onClick={handleLabelClick}
+                    smooth="true"
+                    duration={200}
+                  >
+                    {pages}
                   </Link>
                 </li>
               </S.Url>
@@ -62,8 +69,8 @@ export const Header = ({ toggleTheme }: HeaderProps) => {
             {['Home', 'Technologies', 'Projects'].map((pages, index) => (
               <S.Url key={index}>
                 <li className="pages">
-                  <Link to={pages.toLowerCase()}>
-                    <a>{pages}</a>
+                  <Link to={pages.toLowerCase()} smooth="true" duration={200}>
+                    {pages}
                   </Link>
                 </li>
               </S.Url>

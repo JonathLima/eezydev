@@ -15,7 +15,6 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
     "plugin:@next/next/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -32,6 +31,7 @@
     "react-hooks/exhaustive-deps": "warn",
     "@next/next/no-img-element": "off",
     "react/prop-types": "off",
+    "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off"

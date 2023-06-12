@@ -5,14 +5,13 @@ import 'aos/dist/aos.css'
 import { AboutMe } from 'components/AboutMe'
 import { Footer } from 'components/Footer'
 import { Header } from 'components/Header'
-import { HomeContainer } from 'components/HomeContainer'
 import { ProjectsSwipper } from 'components/ProjectsSwipper'
 import { RocketButton } from 'components/RocketButton'
 import Techs from 'components/Techs'
 import { GetStaticProps } from 'next/types'
-
 import { useEffect } from 'react'
 
+import { HomeContainer } from 'components/HomeContainer'
 import * as S from './../styles/pages'
 
 type PostProps = {

@@ -9,7 +9,7 @@ export const TechContainer = styled.section`
   }
 
   @media (max-width: 960px) {
-    margin-top: 20rem;
+    margin-top: 10rem;
     h2 {
       font-size: 5rem;
       margin-top: 5rem;

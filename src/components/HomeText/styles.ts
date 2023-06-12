@@ -2,73 +2,58 @@ import styled from 'styled-components'
 
 export const TextContainer = styled.div`
   display: flex;
+  width: 100%;
+  text-align: right;
+  align-self: center;
   flex-direction: column;
-  margin-left: 5rem;
 
   h1 {
-    position: relative;
-    top: 5rem;
     color: ${(props) => props.theme.colors.text};
     font-size: 2.4rem;
+    text-align: center;
     font-weight: 500;
   }
-  p {
-    position: relative;
-    top: 4rem;
-    color: ${(props) => props.theme.colors.headerText};
 
-    font-size: 6rem;
-    font-weight: bold;
-  }
-
-  div {
+  .text-container {
     display: flex;
-    justify-content: right;
-    margin-top: 3rem;
+    flex-direction: column;
+    .my-name-title {
+      font-size: 6.5rem;
+      color: ${(props) => props.theme.colors.headerText};
+      font-weight: bold;
+    }
     span {
-      position: relative;
       font-size: 1.8rem;
-      text-align: right;
       color: ${(props) => props.theme.colors.text};
     }
   }
 
   @media (max-width: 960px) {
-    width: 100%;
-    margin-top: 2.5rem;
-    justify-content: center;
-    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
 
-    h1 {
-      position: initial;
-      font-size: 2.5rem;
-      text-align: left;
-      padding: 0 1.5rem;
-    }
-    p {
-      font-size: 5rem;
-      right: 1.5rem;
-      top: -1.5rem;
-    }
-    div {
+    .text-container {
+      .my-name-title {
+        font-size: 6.5rem;
+        color: ${(props) => props.theme.colors.headerText};
+        font-weight: bold;
+      }
       span {
-        position: relative;
-        right: 1.5rem;
-        top: -5rem;
+        font-size: 1.8rem;
+        color: ${(props) => props.theme.colors.text};
       }
     }
   }
 
   @media (max-width: 520px) {
     h1 {
-      width: 85%;
-      margin-bottom: 1rem;
+      font-size: 2rem;
     }
-    p {
-      left: -2rem;
-    }
-    span {
-      margin-right: 1rem;
+
+    .text-container {
+      .my-name-title {
+        font-size: 5.2rem;
+      }
     }
   }
 `

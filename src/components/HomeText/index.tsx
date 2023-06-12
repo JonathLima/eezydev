@@ -1,3 +1,4 @@
+import { Socials } from 'components/Socials'
 import * as S from './styles'
 
 export const HomeText = () => {
@@ -5,10 +6,11 @@ export const HomeText = () => {
     <>
       <S.TextContainer data-aos="fade-left">
         <h1 className="typing">{'Hello World, my name is'}</h1>
-        <p>{'Jonathan'}</p>
-        <div>
-          <span>{'Game Design | 3D Animation'}</span>
+        <div className="text-container">
+          <p className="my-name-title">{'Jonathan'}</p>
+          <span className="act-deploy">{'Game Design | 3D Animation'}</span>
         </div>
+        <Socials />
       </S.TextContainer>
     </>
   )

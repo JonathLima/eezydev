@@ -15,6 +15,13 @@ export const ProjectContainer = styled.div`
     height: 28rem;
   }
 
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+
   .swiper-slide {
     display: flex;
     width: 100%;
@@ -59,7 +66,7 @@ export const ProjectContainer = styled.div`
   }
 
   @media (max-width: 960px) {
-    margin-top: 30rem;
+    margin-top: 20rem;
     justify-content: center;
     align-items: center;
     h2 {

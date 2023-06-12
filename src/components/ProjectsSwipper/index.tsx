@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { SanityImageSource } from '@sanity/image-url/lib/types/types'
 import { EffectCards } from 'swiper'
 
+import Image from 'next/image'
 import { FaGithub } from 'react-icons/fa'
 import { GiWorld } from 'react-icons/gi'
 import * as S from './styles'
@@ -36,7 +37,12 @@ export const ProjectsSwipper = ({ projects }: ProjectsSwipperProps) => {
         >
           {projects.map((project) => (
             <SwiperSlide key={project._id}>
-              <img src={project.imageUrl} alt={project.title} />
+              <Image
+                className="image"
+                src={project.imageUrl}
+                fill
+                alt={project.title}
+              />
               <div className="projectOptions">
                 <strong>{project.title}</strong>
                 <div className="links-projects">

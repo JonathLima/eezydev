@@ -11,8 +11,6 @@ export const AboutContainer = Styled.section`
     margin-bottom: 5rem;
   }
 
-
-
   p{
 
     color: ${(props) => props.theme.colors.text};
@@ -21,7 +19,7 @@ export const AboutContainer = Styled.section`
   }
 
   @media (max-width: 960px) {
-    margin-top: 20rem;
+    margin-top: 5rem;
     h2 {
       font-size: 5rem;
       margin-top: 5rem;
