@@ -25,10 +25,11 @@ export const RocketButton = () => {
     <>
       <S.RocketButton
         onClick={backToTop}
-        active={`${showScroll ? 'active' : ''}`}
+        aria-label="Rocket button"
+        active={`${showScroll ? "active" : ""}`}
       >
         <IoMdRocket />
       </S.RocketButton>
     </>
-  )
+  );
 }

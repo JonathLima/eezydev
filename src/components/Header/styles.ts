@@ -5,6 +5,10 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
+
+  .ul-header{
+    list-style: none;
+  }
 `
 
 export const Logo = styled.h1`

@@ -40,23 +40,25 @@ export const Header = ({ toggleTheme }: HeaderProps) => {
             EEZY<span>.DEV</span>
           </S.Logo>
           <BurgerMenu onChange={handleLabelClick} />
-          <S.PageList active={`${isCheck ? 'active' : ''}`}>
-            {['Home', 'Technologies', 'Projects'].map((pages, index) => (
+          <S.PageList active={`${isCheck ? "active" : ""}`}>
+            {["Home", "Technologies", "Projects"].map((pages, index) => (
               <S.Url key={index}>
-                <li className="pages">
-                  <Link
-                    to={pages.toLowerCase()}
-                    onClick={handleLabelClick}
-                    smooth="true"
-                    duration={200}
-                  >
-                    {pages}
-                  </Link>
-                </li>
+                <ul className="ul-header">
+                  <li className="pages">
+                    <Link
+                      to={pages.toLowerCase()}
+                      onClick={handleLabelClick}
+                      smooth="true"
+                      duration={200}
+                    >
+                      {pages}
+                    </Link>
+                  </li>
+                </ul>
               </S.Url>
             ))}
             <S.HeaderSettings>
-              <ButtonTheme onClick={toggleTheme} />
+              <ButtonTheme onClick={toggleTheme} aria-label="Theme button" />
             </S.HeaderSettings>
           </S.PageList>
         </S.Container>
@@ -66,21 +68,24 @@ export const Header = ({ toggleTheme }: HeaderProps) => {
             EEZY<span>.DEV</span>
           </S.Logo>
           <S.PageList>
-            {['Home', 'Technologies', 'Projects'].map((pages, index) => (
+            {["Home", "Technologies", "Projects"].map((pages, index) => (
               <S.Url key={index}>
-                <li className="pages">
-                  <Link to={pages.toLowerCase()} smooth="true" duration={200}>
-                    {pages}
-                  </Link>
-                </li>
+                <ul className="ul-header">
+                  <li className="pages">
+                    <Link to={pages.toLowerCase()} smooth="true" duration={200}>
+                      {pages}
+                    </Link>
+                  </li>
+                </ul>
               </S.Url>
             ))}
+
             <S.HeaderSettings>
-              <ButtonTheme onClick={toggleTheme} />
+              <ButtonTheme onClick={toggleTheme} aria-label="Theme button" />
             </S.HeaderSettings>
           </S.PageList>
         </S.Container>
       )}
     </>
-  )
+  );
 }

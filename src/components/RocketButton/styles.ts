@@ -1,14 +1,15 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const RocketButton = styled.button<{ active?: string }>`
-  opacity: ${({ active }) => (active ? '100%' : '0%')};
+  opacity: ${({ active }) => (active ? "100%" : "0%")};
   position: fixed;
   display: flex;
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
-  width: 5rem;
+  width: 3.2rem;
+  height: 3.2rem;
   animation: fadeIn 0.5s;
   transition: opacity 0.4s;
-  height: 5rem;
+
   justify-content: center;
   align-items: center;
   border: none;
@@ -36,4 +37,4 @@ export const RocketButton = styled.button<{ active?: string }>`
   @media (max-width: 920px) {
     visibility: hidden;
   }
-`
+`;
