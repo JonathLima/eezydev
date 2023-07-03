@@ -30,7 +30,7 @@ export const Socials = () => {
             <SiGmail />
           </a> */}
           <a
-            href="https://www.artstation.com/eezy"
+            href="https://www.artstation.com/jonathlima"
             target="_blank"
             rel="noreferrer"
           >
