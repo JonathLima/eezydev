@@ -9,14 +9,14 @@ export const Socials = () => {
       <S.SocialContainer data-aos="fade-up">
         <S.Socials>
           <a
-            href="https://github.com/JonathSilva"
+            href="https://github.com/JonathLima"
             target="_blank"
             rel="noreferrer"
           >
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/jonathsilva/"
+            href="https://www.linkedin.com/in/jonathlima/"
             target="_blank"
             rel="noreferrer"
           >
